@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_complete_guide/answer.dart';
-
 import 'package:flutter_complete_guide/question.dart';
 
 class Quiz extends StatelessWidget {

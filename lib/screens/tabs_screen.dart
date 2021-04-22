@@ -9,7 +9,10 @@ class TabsScreen extends StatefulWidget {
 }
 
 class _TabsScreenState extends State<TabsScreen> {
-  final List<Widget> _pages = [CategoriesScreen(), FavoritesScreen()];
+  final List<Widget> _pages = [
+    CategoriesScreen(),
+    FavoritesScreen()
+  ];
 
   int _selectedPageIndex = 0;
 
@@ -32,18 +35,9 @@ class _TabsScreenState extends State<TabsScreen> {
         unselectedItemColor: Colors.white,
         selectedItemColor: Theme.of(context).accentColor,
         currentIndex: _selectedPageIndex,
-        type: BottomNavigationBarType.shifting,
         items: [
-          BottomNavigationBarItem(
-            backgroundColor: Theme.of(context).primaryColor,
-            icon: Icon(Icons.category),
-            title: Text('Categories'),
-          ),
-          BottomNavigationBarItem(
-            backgroundColor: Theme.of(context).primaryColor,
-            icon: Icon(Icons.star),
-            title: Text('Favorites'),
-          ),
+          BottomNavigationBarItem(icon: Icon(Icons.category), title: Text('Categories')),
+          BottomNavigationBarItem(icon: Icon(Icons.star), title: Text('Favorites')),
         ],
       ),
     );
